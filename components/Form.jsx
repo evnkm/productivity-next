@@ -16,13 +16,13 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
       >
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
-            Your AI Prompt
+            Daily
           </span>
-
-          <textArea
+          <textarea
             value={post.prompt}
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
             placeholder="What's on your mind?"
+            required
             className="form_textarea"
           />
         </label>
@@ -36,6 +36,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             value={post.tag}
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
             placeholder="Enter #tags"
+            required
             className="form_input"
           />
         </label>
