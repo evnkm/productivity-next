@@ -1,5 +1,6 @@
 import Feed from "@components/Feed";
-import Carousel from "@components/Carousel";
+// import Carousel from "@components/Carousel";
+import { Separator } from "@components/ui/separator";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       </p>
 
       <Feed />
+      <Separator />
       <Carousel />
     </section>
   );
