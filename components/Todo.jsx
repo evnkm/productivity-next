@@ -29,7 +29,7 @@ const Todo = () => {
 
   return (
     <div>
-      <h1>My Todo List</h1>
+      <h1 className="text-white">Week of 7/8/24</h1>
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} />
     </div>

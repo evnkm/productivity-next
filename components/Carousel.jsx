@@ -29,13 +29,13 @@ const Carousel = ({}) => {
   };
 
   return (
-    <div className="carousel w-3/4">
+    <div className="carousel w-3/4 h-60">
       <div className="relative w-40 h-auto">
         <Image
           src="/assets/icons/left-arrow.svg"
           className="w-full object-center object-contain invert"
           fill
-          onClick={nextQuote}
+          onClick={prevQuote}
         />
       </div>
       <div>
